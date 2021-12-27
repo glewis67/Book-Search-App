@@ -4,7 +4,7 @@ type User{
     _id:ID
     userName:String
     email:String
-    bookCount:Init
+    bookCount:Int
     savedBooks:[Book]
 }
 type Auth{
@@ -19,7 +19,7 @@ type Book{
     image:String
     link:String
 }
-type BookInput{
+input BookInput{
     bookId:String
     authors:[String]
     description:String
