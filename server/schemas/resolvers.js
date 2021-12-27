@@ -27,7 +27,7 @@ const resolvers={
             if(!correctPw){
                 throw new AuthenticationError("incorrectCredentials")
             }
-            const token=signUser(user)
+            const token=signToken(user)
             return{token,user}
         },
         saveBook:async(parent,{input},context)=>{
